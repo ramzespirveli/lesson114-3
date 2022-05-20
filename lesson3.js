@@ -1,3 +1,5 @@
+//'use strict';
+
 // 1. შექმენით მასივი, რომლის საწყისი მნიშვნელობა იქნება რიცხვები: 5, 25, 89, 120, 36;
 
 //   მასივის ბოლოში დაამატეთ ორი ელემენტი(სტრინგი): javascript და python;
@@ -78,16 +80,20 @@ let array5=languages.filter(function(item){
 //console.log(array5);
 
 // 6.მოცემულია მასივი:
-let array6= ['academy', 'of', 'digital', 'industries']
+let array6= ['academy', 'of', 'digital', 'industries'];
 
 // Reduce-ის საშუალებით მიიღეთ ერთი კომბინირებული სტრინგი(academy of digital industries);
 
 array6= ['academy', 'of', 'digital', 'industries'].reduce(function(acumulator,concatveliu){
     return acumulator.concat(concatveliu+" ");
 },
- ''
+
 )
 //console.log(array6);
+
+let arrai= ['academy', 'of', 'digital', 'industries'].reduce((x,y)=> x.concat(" ").concat(y));
+//console.log(arrai);
+
 
 // 7. მოცემულია მასივი:
  //let item = [12, 'google', 32, null, 'yahoo’, 25];
@@ -116,4 +122,4 @@ let includmet=words.filter(function(item){
         return item;
     }
 })
-    console.log(includmet);
+    //console.log(includmet);
